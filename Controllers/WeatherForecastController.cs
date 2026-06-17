@@ -27,7 +27,7 @@ namespace WebApplication2.Controllers
                 var result = Enumerable.Range(1, 5).Select(index => new WeatherForecast
                 {
                     Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    TemperatureC = 17,
+                    TemperatureC = 18,
                     Summary = Summaries[Random.Shared.Next(Summaries.Length)]
                 }).ToArray();
 
